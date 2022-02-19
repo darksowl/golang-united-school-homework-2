@@ -11,7 +11,7 @@ import (
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
-type myInt int64
+type myInt int
 
 const (
 	SidesTriangle = 3
