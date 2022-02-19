@@ -22,7 +22,7 @@ const (
 func CalcSquare(sideLen float64, sidesNum myInt) float64 {
 	var S float64 = 0
 	if sidesNum == SidesTriangle {
-		S := (math.Pow(sideLen, 2) * math.Sqrt(3) / 4)
+		S := math.Pow(sideLen, 2) * math.Sqrt(3) / 4
 		return S
 	} else if sidesNum == SidesSquare {
 		S := math.Pow(sideLen, 2)
@@ -30,7 +30,8 @@ func CalcSquare(sideLen float64, sidesNum myInt) float64 {
 	} else if sidesNum == SidesCircle {
 		S := math.Pow(sideLen,2)*math.Pi
 		return S
-	} else {fmt.Println("Unknown shape")
+	} else {
+		fmt.Println("Unknown shape")
 		return S
 	}
 }
