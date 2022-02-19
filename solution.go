@@ -35,10 +35,3 @@ func CalcSquare(sideLen float64, sidesNum myInt) float64 {
 		return S
 	}
 }
-
-func main(){
-	CalcSquare(10.0, SidesTriangle)
-	CalcSquare(10.0, SidesSquare)
-	CalcSquare(10.0, SidesCircle)
-	CalcSquare(10.0, 5)
-}
